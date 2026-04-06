@@ -1,5 +1,5 @@
 \# Data Engineering & Analytics Portfolio  
-\> \*\*Ex-Amazon Data Analyst | MS in Data Engineering Student\*\*
+\> \*\*Ex-Amazon Data Analyst | MBA in Big Data Engineering Student\*\*
 
 Welcome to my technical portfolio. This repository showcases my transition from Data Analytics into \*\*Data Engineering\*\*, featuring end-to-end pipelines that leverage the Modern Data Stack to solve complex data challenges.
 
