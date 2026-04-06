@@ -1,0 +1,15 @@
+﻿# dbt specific
+target/
+dbt_packages/
+logs/
+dbt_modules/
+
+# Python specific
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# OS specific
+.DS_Store
+Thumbs.db

@@ -1,0 +1,25 @@
+version: 2
+
+
+sources:
+  - name: e_comm_project
+    schema: raw
+    tables:
+     - name: r_CATEGORY
+       identifier: RAW_CATEGORY
+     - name: r_CUSTOMERS
+       identifier: RAW_CUSTOMERS
+     - name: r_GEOLOCATION
+       identifier: RAW_GEOLOCATION
+     - name: r_ORDER_ITEMS
+       identifier: RAW_ORDER_ITEMS
+     - name: r_ORDER_PAYMENTS
+       identifier: RAW_ORDER_PAYMENTS
+     - name: r_ORDER_REVIEWS
+       identifier: RAW_ORDER_REVIEWS
+     - name: r_ORDERS
+       identifier: RAW_ORDERS
+     - name: r_PRODUCTS
+       identifier: raw_products
+     - name: r_SELLERS
+       identifier: RAW_SELLERS

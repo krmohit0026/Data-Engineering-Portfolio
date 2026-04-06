@@ -1,0 +1,14 @@
+# Ignore the environment variables file (Contains API Keys!)
+.env
+
+# Ignore Python cache files (makes your folders messy)
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore Mac/Windows system files
+.DS_Store
+Thumbs.db

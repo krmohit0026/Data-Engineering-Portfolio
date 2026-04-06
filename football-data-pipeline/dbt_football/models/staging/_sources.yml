@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: football_raw
+    database: FOOTBALL_DB
+    schema: RAW
+    tables:
+      - name: standings
+      - name: matches

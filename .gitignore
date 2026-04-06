@@ -1,0 +1,17 @@
+﻿# --- Python & Virtual Envs ---
+fluxcart-pipeline/kafkaenv/
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# --- Kafka / Logs ---
+*.log
+checkpoint/
+.env
+
+# --- dbt (ecomm_pipeline) ---
+ecomm_pipeline/target/
+ecomm_pipeline/dbt_packages/
+ecomm_pipeline/logs/

@@ -1,0 +1,30 @@
+# --- API & WEB LAYER ---
+fastapi==0.110.0
+uvicorn==0.27.1
+pydantic==2.6.3
+pydantic-settings==2.2.1
+httpx==0.27.0
+requests==2.31.0
+python-multipart==0.0.9
+
+# --- STREAMING & MESSAGING (KAFKA) ---
+confluent-kafka==2.3.0
+python-dotenv==1.0.1
+
+# --- CLOUD STORAGE (AWS S3) ---
+boto3==1.34.51
+botocore==1.34.51
+
+# --- DATA WAREHOUSE & ANALYTICS (SNOWFLAKE) ---
+snowflake-connector-python==3.7.1
+snowflake-sqlalchemy==1.5.3
+cryptography>=42.0.0
+
+# --- TRANSFORMATION & MATH ---
+# We'll use dbt inside Snowflake for the 'T' in ELT
+dbt-snowflake==1.7.1
+pandas==2.2.1
+numpy==1.26.4
+
+# --- UTILITIES ---
+python-dateutil==2.8.2

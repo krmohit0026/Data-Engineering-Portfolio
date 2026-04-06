@@ -1,0 +1,52 @@
+version: 2
+
+sources:
+  - name: kafka_source
+    database: KAFKA_DB
+    schema: RAW
+    tables:
+      - name: ANALYTICS_SUMMARY
+        description: "Raw summary of behavior, orders, and revenue"
+      - name: FRAUD_ALERTS
+        description: "Real-time fraud detection alerts"
+      - name: INVENTORY_SUMMARY
+        description: "Summary of stock levels and inventory orders"
+
+models:
+  # --- STAGING LAYER (stg_ prefix) ---
+  - name: stg_analytics
+    description: "Casts ANALYTICS_SUMMARY columns to standard types"
+    columns:
+      - name: event_at
+        data_tests:
+          - not_null
+
+  - name: stg_fraud
+    description: "Casts FRAUD_ALERTS columns to standard types"
+    columns:
+      - name: alert_id
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_inventory
+    description: "Casts INVENTORY_SUMMARY columns to standard types"
+
+  # --- INTERMEDIATE LAYER (dim_ / fct_ prefix) ---
+  - name: dim_event_types
+    description: "Mapping table for event categories"
+
+  - name: fct_daily_summary
+    description: "The 'Source of Truth' joining analytics, fraud, and inventory by day"
+    columns:
+      - name: event_date
+        data_tests:
+          - not_null
+          - unique
+
+  # --- MART LAYER (mart_ prefix) ---
+  - name: mart_business_health
+    description: "Final reporting table for net revenue and stock health metrics"
+    columns:
+      - name: net_revenue
+        description: "Gross revenue minus potential fraud loss"

@@ -1,0 +1,16 @@
+version : 2
+
+sources :
+  - name: RAW
+    database : O_LIST_DB
+    schema : RAW
+    tables :
+      - name : RAW_CUSTOMERS
+      - name : RAW_GEOLOCATION
+      - name : RAW_ORDER_ITEMS
+      - name : RAW_ORDER_PAYMENTS
+      - name : RAW_ORDER_REVIEWS
+      - name : RAW_ORDERS
+      - name : RAW_PRODUCTS
+      - name : RAW_SELLERS
+      - name : RAW_CATEGORY
