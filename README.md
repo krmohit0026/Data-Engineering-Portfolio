@@ -44,4 +44,4 @@ Previously a \*\*Data Analyst at Amazon\*\*, I specialized in SQL optimization a
 
 \---  
 📫 \*\*Connect with me:\*\* \[LinkedIn\](https://www.linkedin.com/in/0209-1609-kumar-mohit/) |  
- \[Email\](mailto:krmohit0026@gmail.com)  
+ \[Email\](krmohit0026@gmail.com)  
